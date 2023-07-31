@@ -28,9 +28,6 @@ public class Main {
         for (String element : files) {
             finalValues.add(getValue(element));
         }
-        for (Integer element : finalValues) {
-            System.out.println(element);
-        }
 
         int median;
         int sum = 0;
@@ -41,7 +38,7 @@ public class Main {
         } else {
             median = finalValues.get(arrayHalf);
         }
-        System.out.println(median);
+
         for (int i = 0; i < finalValues.size(); i++) {
             sum += Math.abs(finalValues.get(i) - median);
         }
